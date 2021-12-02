@@ -8,8 +8,9 @@ while (True):
     kursi = int(input("Masukkan nomor kursi " + nama + ": "))
 
     if kursi in B:
-        continue
         print("Mohon maaf kursi tersebut telah terisi!")
+        if kursi in B:
+            continue
     if kursi not in A:
         A.append(nama)
         B.append(kursi)
